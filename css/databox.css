@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* 
+キャラクタのデータを表示するページ用
+	border, neighbor, other, trigger
+	
+.box がコンフリクトする可能性があるので、確認して読み込むこと
+
+色違いは各ファイルで上書きして修正する
+ */
+
+#member {
+	text-align: left;
+	font-size: 0;
+}
+
+/* ------------ label ------------ */
+.label {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.label-str {
+	width: 60%;
+	margin: 5px 0 5px 10px;
+	font-size: 11pt;
+}
+
+/* ------------ box ------------ */
+.box {
+	display: inline-block;
+	vertical-align: top;
+	width: 32.5%;
+/* 	height: 500px; */
+	margin-left: 0.4%;
+	margin-right: 0.4%;
+	margin-bottom: 16px;
+/*	background: #888;*/
+}
+
+.box img {
+	width: 100%;
+	height: 292px;
+	margin-bottom: 5px;
+}
+
+/* 説明文＋情報文 */
+.member-info {
+	height: 210px;
+	background: rgba(40, 40, 200, 0.4);
+	padding: 8px 8px 8px 10px;
+	font-size: 11pt;
+	line-height: 1.3em;
+}
+/* 説明文 */
+.member-str {
+	height: 95px;
+	height: 120px;
+}
+/* 情報文 */
+.member-attr {
+	height: 88px;
+	color: #0ff;
+}
+
+/* Smart Phone */
+@media only screen and (max-width: 700px) {
+	#container {
+		width: 100%;
+	}
+	
+	.box {
+		width: 49.0%;		/* ２つ並べるなら 49% */
+		margin-left: 0.5%;
+		margin-right: 0.5%;
+		margin-bottom: 10px;
+	}
+	.box img {
+		width: 100%;
+		height: auto;
+	}
+	.member-info {
+		height: 280px;
+		font-size: 10pt;
+	}
+	.member-str {
+		height: 175px;
+	}
+	.member-attr {
+/* 
+		height: 120px;
+		background: #fff;
+ */
+	}
+
+
+}
+

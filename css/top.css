@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+	#topics		pc only
+	#topimg
+	#info		what's new, twitter, youtube
+	#links
+*/
+
+#topics {background:url(../img/top/topics.png); width:960px; height:48px;position:relative;}
+#topics a{color:#F88;font-size:11px;}
+#pc #topics a{color:#F88;font-size:16px;}
+
+/* #info #whatsnew */
+#info {font-size:0;text-align:left;}
+#whatsnew a{color:#FFF; text-decoration: underline;}
+#pc #whatsnew {display:inline-block;background: url(../img/top/whatsnew.png) no-repeat;width:350px;height:308px;vertical-align: top;margin-right: 10px;}
+#pc #whatsnew ul{overflow:auto;height:282px;width:346px;margin:24px 0 0 2px;}
+#pc #whatsnew li span{font-size: 12px;font-weight: bold;display: block;line-height: 1em;color: #ea6a70;margin-bottom: 3px;}
+#pc #whatsnew li {padding: 5px 10px;line-height: 1.4em;font-size: 11px;border-bottom: 1px solid #666;}
+
+#mobile #whatsnew {display:inline-block;margin-top: 4px;}
+#mobile #whatsnew ul{overflow:auto;height:86px;margin:0;}
+#mobile #whatsnew li span{font-size: 12px;font-weight: bold;display: block;line-height: 1em;color: #ea6a70;margin-bottom: 3px;}
+#mobile #whatsnew li {padding: 5px 10px;line-height: 1.4em;font-size: 11px;border-bottom: 1px solid #666;}
+
+/* #info #twitter */
+#pc #twitter {display:inline-block;background: url(../img/top/twitter.png) no-repeat;width:350px;height:309px;padding:24px 2px 2px 2px;vertical-align: top;overflow: hidden;margin-right: 10px;}
+#pc #twitter iframe {height:284px;}
+
+#mobile #twitter {display:inline-block;height:240px;margin-top: 8px;overflow: hidden;}
+
+/* #info #youtube */
+#pc #youtube {display:inline-block;width:240px;height:300px;vertical-align: top;}
+#pc #youtube #preview {background: url(../img/top/youtube.png) no-repeat;height:152px;padding:24px 0px 0px 2px;vertical-align: top;}
+#pc #youtube #promotion {background: url(../img/top/promotion.png) no-repeat;height:152px;padding:24px 0px 0px 2px;vertical-align: top;margin-top:4px;}
+
+#mobile #youtube {}
+#mobile #youtube #preview {margin-top:8px;}
+#mobile #youtube #promotion {margin-top:8px;}
+
+/* #links */
+#pc #links {font-size : 0px; text-align:left;margin-top:20px;}
+#pc #links img {margin-right:10px;}
+
+#mobile #links {text-align:center;margin-top:0px;}
+#mobile #links img {margin-top:8px;}
+
+/*
+.slidebox {
+	position: relative;
+}
+#topcaption {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 20pt;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.slidebox {
+		margin: auto;
+		width: 90%;
+	}
+}
+*/

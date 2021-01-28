@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="utf-8" />
+
+	<title>ワールドトリガー.info</title>
+	
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<script src="./jslib/jquery-1.8.3.min.js"></script>
+	<script src="./js/common.js"></script>
+	
+	
+	<!--[if lt IE 9]>
+	<script src="./jslib/html5shiv.js"></script>
+	<![endif]-->
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-51490092-1', 'worldtrigger.info');
+		ga('require', 'linkid', 'linkid.js');
+		ga('send', 'pageview');
+	</script>
+	<link rel="stylesheet" href="./jslib/jquery.simpleTicker/jquery.simpleTicker.css">
+	<script src="./jslib/jquery.simpleTicker/jquery.simpleTicker.js"></script>
+	<link rel="stylesheet" href="./jslib/colorbox.css">
+	<script src="./jslib/jquery.colorbox-min.js"></script>
+	<script src="./jslib/jquery.cycle.all.js"></script>
+	<link rel="stylesheet" href="./css/top.css?191220">
+	<style>
+		.addImg {
+			text-align: right;
+		}
+		.addImg2 {
+			font-size: 0;
+			margin: 10px 0;
+			text-align: left;
+		}
+		#info {
+			font-size: 0;
+		}
+		.logoImg {
+			margin-right: 30px;
+		}
+		#cycle {
+			margin: 0 auto;
+		/*	width: 100%;*/
+		}
+		#topimg {
+			position: relative;
+		}
+
+		#pc #comics{
+			display: inline-block;
+			width: 240px;
+			margin: 2px 0;
+		}
+
+		.countdown {
+			position: absolute;
+			left: 678px;
+			top: 668px;
+		}
+		
+		
+		/* #colorbox */
+    #cboxTopLeft{width:0px; height:0px; background:none;}
+    #cboxTopRight{width:0px; height:0px; background:none;}
+    #cboxBottomLeft{width:0px; height:0px; background:none;}
+    #cboxBottomRight{width:0px; height:0px; background:none;}
+    #cboxMiddleLeft{width:0px; background:none;}
+    #cboxMiddleRight{width:0px; background:none;}
+    #cboxTopCenter{height:0px; background:none;}
+    #cboxBottomCenter{height:0px; background:none;}
+    #cboxContent{background:#000; overflow:hidden;}
+        .cboxIframe{background:#000;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:0px;}
+        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:0px; left:0px; color:#949494;}
+        #cboxLoadingOverlay{background:none;}
+        #cboxLoadingGraphic{background:none;}
+        
+        #cboxClose { display: none; }
+		
+			
+		@media only screen and (max-width: 700px) {
+			.countdown {
+				width: 29%;
+				left: 70.625%;
+				top: 75.9%;
+			}
+		}
+	</style>
+	
+	<script>
+		var ts_ts = "1610255012";
+		$(function(){
+			$.getJSON("./server/geter.php?t=top_whatsnew&ts_ts=" + ts_ts,{ts: new Date().getTime()}, function(data){
+				$(data).each(function(){
+					if(this.url != ''){
+						if(this.url.search(/^https?:/)){
+							$('<li>'+'<span>'+this.day+'</span><a href="'+this.url+'">'+this.content+'</a></li>').appendTo('#whatsnew ul');
+						}else{
+							$('<li>'+'<span>'+this.day+'</span><a href="'+this.url+'" target="_blank">'+this.content+'</a></li>').appendTo('#whatsnew ul');
+						}
+					}else{
+						$('<li>'+'<span>'+this.day+'</span>'+this.content+'</li>').appendTo('#whatsnew ul');
+					}
+				});
+			});
+
+			$.getJSON("./server/geter.php?t=top_topics&ts_ts=" + ts_ts,{ts: new Date().getTime()},function(data){
+				$(data).each(function(){
+					if(this.url != ''){
+						if(this.url.search(/^https?:/)){
+							$('<li><a href="'+this.url+'">'+this.text+'</a></li>').appendTo('#ticker-slide ul');
+						}else{
+							$('<li><a href="'+this.url+'" target="_blank">'+this.text+'</a></li>').appendTo('#ticker-slide ul');
+						}
+					}else{
+						$('<li>'+this.content+'</li>').appendTo('#ticker-slide ul');
+					}
+				});
+				$.simpleTicker($("#ticker-slide"),{'effectType':'slide'});
+			});
+			
+			$('#cycle').cycle({
+				fx: 'scrollLeft',
+				speed: 300,
+				continuous:0,
+				easing:'linear',
+				timeout: 3000,
+				sync: 1,
+			});
+			
+//			setTimeout(drawpopup, 1000);
+
+		});
+
+function drawpopup(){
+	$('.box').colorbox({maxWidth:"90%", open:true, inline:true});
+}
+
+	</script>
+</head>
+<body>
+<div style="display:none;">
+	<div id='info-popup'  style='width:100%;'>
+		<a href='http://www.toei-anim.co.jp/tv/wt/news/2019122101.html' target='_blank'>
+			<img src='img/top/191221popup.jpg' style='width:100%;'>
+		</a>
+	</div>
+</div>
+	<a href="#info-popup" class=box></a>
+
+	<div id="menu">
+<div class="back">
+<img class="replica" src="./img/menu/topback_non.png">
+<img class="subtitle" src="./img/menu/menu_tex.png">
+<!-- 转页部分 -->
+<div class="item">
+ <a class='btn' href="./article/story.html"><img src="./img/menu/menu_a1.png"></a>
+ <a class='btn' href="./article/character.html"><img src="./img/menu/menu_a2.png"></a>
+ <a class='btn' href="./article/trigger.html"><img src="./img/menu/menu_a3.png"></a>
+ <a class='btn' href="./article/comics.html"><img src="./img/menu/menu_a4.png"></a>
+ <a class='btn' href="./article/special.html"><img src="./img/menu/menu_a5.png"></a>
+ <a class='btn' href="./article/keywords.html"><img src="./img/menu/menu_a6.png"></a>
+ <a class='btn' href="./article/goods.html"><img src="./img/menu/menu_a7.png"></a>
+ <a class='btn' href="./article/qanda.html"><img src="./img/menu/menu_a8.png"></a></div>
+<img class="menu_d" src="./img/menu/menu_d.png"></div></div>
+	<div id="container">
+	<div id="topics">
+<div id="ticker-slide" class="ticker">
+<ul></ul>
+</div>
+</div>
+	<div id=topimg>
+	<img src="./img/top/191221top.jpg">
+	</div>
+
+	<div id="info">
+		<div id="whatsnew">
+				<ul></ul>
+		</div>
+		<div id="twitter">
+				 	<a class="twitter-timeline" 
+			href="https://twitter.com/W_Trigger_off" data-widget-id="472252639917252608" data-chrome="noheader nofooter" height="280" lang="ja" xml:lang="ja">@W_Trigger_off からのツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		 
+		</div>
+
+		<div id="comics">
+	<a href="article/comics.php"><img src="./img/top/index_com_200604.png">
+</a>
+<a href="article/comics.php"><img src="./img/top/index_bbf_181204.png">
+</a>
+		</div><!--/comics -->
+	</div><!-- #info -->
+	
+	<div id="links" style="font-size:0px;">
+			<a href="http://www.toei-anim.co.jp/tv/wt/" target="_blank"><img src="./img/top/touei_a.png"></a>
+		<a href="https://jumpsq.shueisha.co.jp/rensai/worldtrigger/daikoushin/" target="_blank"><img src="./img/top/daikoushin_246.png"></a>
+<!--	<a href="http://www.tv-asahi.co.jp/worldtrigger/" target="_blank"><img src="./img/top/tvasa.png"></a>-->
+		<a href="article/quiz.php"><img src="./img/top/t20bn.png"></a>
+<!--
+		<a href="article/rank2nd1.php"><img src="./img/top/rank2nd1.png"></a>
+		<a href="article/rank2nd2.php"><img src="./img/top/rank2nd2.png"></a>
+-->
+		</div>
+	</div>
+<div id=footer><img src="./img/footer.png">
+</div>
+</body>
+</html>
