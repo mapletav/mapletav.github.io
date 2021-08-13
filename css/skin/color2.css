@@ -1,0 +1,57 @@
+.btn-style-one,.btn-style-two:hover,.main-header .btn-outer .visit-btn,.main-header .get-btn:hover,.main-header .header-lower .bg-layer:before,.main-header .header-top .social-links a:hover,.main-menu .navigation>li.current-menu-item>a,.main-menu .navigation>li.current>a,.main-menu .navigation>li:hover>a,.scroll-to-top,.social-links-one a:hover,.sticky-header .main-menu .navigation>li.current-menu-item>a,.sticky-header .main-menu .navigation>li.current>a,.sticky-header .main-menu .navigation>li:hover>a, .customizer-box .slider, .preloader {background:#F4762A}
+
+.btn-style-five:hover,.btn-style-one:hover,.btn-style-two,.five-col-theme .column .inner-box .icon span:before,.header-style-two .main-menu .navigation>li.current>a,.header-style-two .main-menu .navigation>li:hover>a,.main-header .info-box .icon-box,.main-menu .navigation>li.current-menu-item>a,.main-menu .navigation>li>ul>li>ul>li>a:hover,.main-slider .bg-box h5,.main-slider .outer-box .price,.scroll-to-top:hover,.sec-title h2 .light,.sec-title h2 strong,.styled-list li:before,.theme_color,.three-col-theme .column .inner-box .icon-left .icon,a,
+.header-style-one .main-menu .navigation > li:hover > a, .header-style-one .main-menu .navigation > li.current > a, .header-style-one .main-menu .navigation > li.current-menu-item > a, .customizer-box button.toggler {color:#F4762A}
+
+.btn-style-one{border:2px solid #F4762A}
+.btn-style-one:hover{border-color:#F4762A}
+.btn-style-two{border:2px solid #F4762A}
+.btn-style-two:hover{border-color:#F4762A}
+.scroll-to-top{border:1px solid #F4762A}
+.main-menu .navigation>li>ul,.main-menu .navigation>li>ul>li>ul{border-top:3px solid #F4762A}
+.main-menu .navigation>li>ul>li.dropdown:hover>a:after,.main-menu .navigation>li>ul>li:hover>a{color:#F4762A}
+.social-links-three a:hover,.social-links-two a:hover{background:#F4762A;border-color:#F4762A}
+.main-slider .bg-box .text a{ color:#F4762A;border-bottom:1px dotted #F4762A!important}
+.main-slider .tp-bullets.preview3 .bullet.selected,.main-slider .tp-bullets.preview3 .bullet:hover{background:#F4762A!important}
+.main-slider .tparrows.preview3:hover::after{border-color:#F4762A!important;background:#F4762A}
+.main-slider .outer-box .btn-style-one.bg-1:hover,.main-slider .outer-box .btn-style-one.bg-2:hover{background:#F4762A}
+.default-portfolio-item .image-link,.gallery-section .filters li:before,.intro-section,.tabs-box .tab-buttons .tab-btn.active-btn,.tabs-box .tab-buttons .tab-btn:hover{background:#F4762A}
+.three-col-theme .column .inner-box .icon-left .icon{margin-bottom:20px}
+.five-col-theme .column .inner-box:hover .icon:before{border:1px solid #F4762A;background:#F4762A}
+.styled-list li:hover{color:#F4762A!important}
+.intro-section.style-two p{border-left-color:#F4762A}
+.intro-section .theme-btn:hover{background:#fff;color:#F4762A}
+.agent-section .info-box .social-links a:hover,.call-out,.sponsors-section{background:#F4762A}
+.intro-section.style-two .btn-style-two{border-color:#F4762A!important;color:#F4762A!important}
+.agent-section .info-box .social-links a:hover,.blog-news-column:hover .post-content,.contact-form .form-group input[type=email]:focus,.contact-form .form-group input[type=password]:focus,.contact-form .form-group input[type=text]:focus,.contact-form .form-group input[type=url]:focus,.contact-form .form-group select:focus,.contact-form .form-group textarea:focus,.monthly-next:hover,.monthly-prev:hover,.nearby-section .location-search .form-group input[type=search]:focus,.nearby-section .location-search .form-group input[type=text]:focus,.nearby-section .location-search .form-group input[type=url]:focus,.tabbed-floor-plans .floor-links li a.active,.testimonials-section .column-carousel.three-column .owl-dot span:hover,.testimonials-section .column-carousel.three-column .owl-dot.active span,.testimonials-section .testimonials-slider .slide-item:hover,.testimonials-section .testimonials-slider .slide-item:hover .image-box,.testimonials-section.theme-two .column-carousel.three-column .owl-dot span,input[type=url]:focus{border-color:#F4762A}
+
+.floor-plans-section .inline-list li .icon,.floor-plans-section .side-links .links-nav>li>ul>li>a.active,.floor-plans-section .side-links .links-nav>li>ul>li>a:hover,.nearby-section .content-column h2{color:#F4762A}
+
+.contact-section .agent-column .social-links a:hover,.contact-section .agent-column h2 strong,.contact-section .form-column h2 strong,.main-footer .copy-right span,.main-footer .social-links a:hover,.two-col-fluid .right-column h2 strong{color:#F4762A}
+
+
+.agent-section .info-box li .icon span:before,.agent-section .info-box li a:hover{color:#F4762A}
+.call-out .theme-btn:hover{background:#fff;color:#F4762A}
+.about-section2 .services-outer .column .inner-box .icon-left .icon,.blog-container .single-column:hover .content .btn-style-default:after,.call-to-action,.gallery-box .popup-header,.gallery-single-container .controls .control-btn:hover .icon,.gallery-single-container .specs-column .icon-box,.monthly-next:hover,.monthly-prev:hover,.recent-news .content .btn-style-default:after,.sidebar .search-form button:hover,.sidebar-page .group-title:after,.single-blog-page .single-comment-box .content-box .reply-button:hover,.styled-pagination .pagination .active a,.styled-pagination .pagination a:hover,.video-section .caption-box{background:#F4762A}
+
+.contact-section .contact-info li .icon:before{top:5px;color:#F4762A}
+.blog-news-column .post-content .post-tags{margin-bottom:5px;color:#F4762A}
+.blog-news-column .post-content .post-tags a,.blog-news-column .post-content .read-more:hover,.blog-news-column .post-content h3 a:hover{color:#F4762A}
+.tabbed-floor-plans .floor-links li a.active,.tabbed-floor-plans .inline-list li .icon{color:#F4762A}
+.tabbed-floor-plans .styled-list li:hover{color:#F4762A!important}
+.page-title .bread-crumb a.current,.page-title .bread-crumb a:hover{color:#F4762A}
+.gallery-single-container .specs-column .info-block:hover .icon-box{color:#F4762A;border-color:#F4762A}
+.gallery-single-container h2 strong{color:#F4762A}
+#schedule-box .modal-content form h3{color:#F4762A}
+#schedule-box .modal-content .default-form h3{margin-bottom:20px;color:#F4762A}
+.four-col-theme .column .inner-box .icon:before{border:2px solid #F4762A}
+.four-col-theme .column .inner-box .icon span:before{color:#F4762A}
+.feature .four-col-theme .column .inner-box .icon:before{border:2px solid #F4762A;background:#F4762A}
+.feature .four-col-theme .column .inner-box:hover .icon span:before,.property-feature .single-property-highlight h3 span,.property-highlight .single-property-highlight h3 span,.recent-news .content .btn-style-default,.recent-news .content h2 a:hover{color:#F4762A}
+.blog-container .content h2 a:hover,.blog-container .single-column:hover .content .btn-style-default{color:#F4762A}
+.blog-container .blog-post .post-info a:hover,.blog-container .blog-post .post-info.lower i{color:#F4762A}
+.sidebar-page .comments-area .reply-btn{color:#F4762A;border-bottom:1px solid #F4762A}
+.sidebar .search-form input[type=search]:focus,.sidebar .search-form input[type=text]:focus{border-color:#F4762A}
+.sidebar .recent-posts .post a,.sidebar .recent-posts .post a:hover{color:#F4762A}
+.sidebar .popular-tags a:hover{background-color:#F4762A;border-color:#F4762A}
+.blog .content h2 a:hover,.sidebar .list li a:hover,.single-blog-page .share-box .social a:hover{color:#F4762A}
