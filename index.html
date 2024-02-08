@@ -1,1066 +1,971 @@
-﻿<!DOCTYPE html>
-<html><!-- 网站设计：Mapletav ////携带私货嘿嘿 ᶘᵒᴥᵒᶅ //// -->
+﻿<!DOCTYPE HTML>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO -->
+  <meta name="author" content="Mapletav"><!-- Reconstruction Time: 20240206 -->
+  <meta name="keywords" content="奇迹地平线">
+  <meta name="description" content="奇迹地平线工作室（Miracle Horizon Studios）成立于2016年1月31日，专注于我的世界（Minecraft）游戏领域的建筑创作。" />
+  <!-- TITLE & ICON -->
+  <title>奇迹地平线工作室</title> 
+  <link rel="shortcut icon" href="img/logo/MH icon.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+  <!-- Styles -->
+  <link href="css/iconfont.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/style2.css" rel="stylesheet" media="screen">
+  <link href="css/dark.css" rel="stylesheet" media="screen">
+</head>
+<body>
 
-	<!-- Part Head -->
-	<head>
-		<meta charset="utf-8">
-		<!-- Part A 网站名称 -->
-		<title>奇迹地平线工作室</title>
-		<!-- Part A CSS部分 -->
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/revolution-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-		<link href="css/loader.css" rel="stylesheet">
-		<link rel="stylesheet" href="customizer/css/style.css" />
-		<link rel="stylesheet" href="css/skin/color1.css" id="customizerSkinCSS" />
-		<!-- Part A 浏览器识别 -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<!-- Part A 自适应（好像还是没有任何用呢） -->
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-		<!-- Part A LOGO小图标 -->
-		<link rel="shortcut icon" href="images/icon.png">
-	</head>
+  <!-- 加载动画 -->
+  <div class="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
 
-	<!-- Part Body -->
-	<body>
-		<!--
-		<div class="page-wrapper">
-        <--
-		<-- Part 01 预加载页面 -->
-		<!--
-			<div class="loader">
-				<div class="loader-inner">
-					<div class="loader-line-wrap">
-						<div class="loader-line"></div>
-					</div>
-					<div class="loader-line-wrap">
-						<div class="loader-line"></div>
-					</div>
-					<div class="loader-line-wrap">
-						<div class="loader-line"></div>
-					</div>
-					<div class="loader-line-wrap">
-						<div class="loader-line"></div>
-					</div>
-					<div class="loader-line-wrap">
-						<div class="loader-line"></div>
-					</div>
-				</div>
+  <div class="wrapper boxed">
+    <div class="click-capture"></div>
+    <!-- Mobile 菜单栏 -->
+    <div class="menu"> 
+      <span class="close-menu icon-cross right-boxed"></span>
+      <div class="menu-lang right-boxed">
+        <a href="" class="active">简体中文 | Chinese</a>
+      </div>
+      <nav class="nav mobile-menu">
+        <ul class="menu-list right-boxed">
+          <li>
+            <a  href="#main">主页</a>
+          </li>
+          <li>
+            <a href="#about">关于我们</a>
+          </li>
+          <li>
+            <a href="#team">团队成员</a>
+          </li>
+          <li>
+            <a href="#projects">项目列表</a>
+          </li>
+          <li>
+            <a href="wiki.html">Wiki</a>
+          </li>
+        </ul>
+        </ul>
+      </nav>
+      <div class="menu-footer right-boxed">
+        <div class="social-list">
+          <a href="https://space.bilibili.com/637477054" class="iconfont icon-bilibili"></a>
+          <a href="https://weibo.com/u/6526071250" class="iconfont icon-xinlangweibo"></a>
+          <a href="https://jq.qq.com/?_wv=1027&k=0vxmqtFQ" class="iconfont icon-QQ-circle-fill"></a>
+        </div>
+        <div class="copy">© MHWORK 2024. All Rights Reseverd<br> Design by Mapletav</div>
+      </div>
+    </div>
 
-			</div>
-		-->
+    <!-- PC 导航栏 -->
+    <header class="navbar boxed js-navbar">  
+      <!-- PC 导航栏/Logo文字 -->
+      <a class="brand" href="#">
+        <img alt="" src="img/logo/MH icon.png">
+        <div class="brand-info">
+          <div class="brand-name">Miracle Horizon</div>
+          <div class="brand-text">Minecraft Architecture Team</div>
+        </div>
+      </a>
+      <!-- PC 导航栏/Logo文字右侧居中
+      <address class="navbar-address visible-md visible-xl">奇迹<span class="text-white">地平线</span></address>
+      -->
+      <!-- Mobile 菜单栏/菜单按钮 -->
+      <button type="button" class="navbar-toggle hidden-lg" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- PC 导航栏/社交媒体 -->
+      <div class="social-list hidden-xs">
+        <a onclick="window.open('https://space.bilibili.com/637477054')" class="iconfont icon-bilibili"></a>
+        <a onclick="window.open('https://weibo.com/u/6526071250')" class="iconfont icon-xinlangweibo"></a>
+        <a onclick="window.open('https://jq.qq.com/?_wv=1027&k=0vxmqtFQ')" class="iconfont icon-QQ-circle-fill"></a>
+      </div>
+      <!-- PC 导航栏/分割线 -->
+      <div class="navbar-spacer pull-right visible-lg"></div>
+      <!-- PC 导航栏/导航栏 -->
+      <nav class="nav navigation visible-lg">
+        <ul>
+          <li>
+            <a  href="#main">首页</a>
+          </li>
+          <li>
+            <a href="#about">关于</a>
+          </li>
+          <li>
+            <a href="#team">成员</a>
+          </li>
+          <li>
+            <a href="#projects">项目</a>
+          </li>
+          <li>
+            <a href="wiki.html">Wiki</a>
+          </li>
+        </ul>
+      </nav>  
+    </header>
+    
+    <!-- 首页幻灯片 -->
+    <main id="main" class="jumbotron">
+      <div class="rev_slider_wrapper">
+        <div id="rev_slider" class="rev_slider tp-overflow-hidden fullscreenbanner">
+          <ul>
+            <!-- 首页幻灯片 1 -->
+            <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+              <img src="https://pic.imgdb.cn/item/61187faf5132923bf8669417.png" data-bgparallax="5"  alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">圣城宫殿
+              </div>
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Palace
+              </div>
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600;">
+                  <a href="#project6" class="popup-with-zoom-anim link-arrow">了解详细 <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+            <!-- 首页幻灯片 2 -->
+            <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+              <img src="https://pic.imgdb.cn/item/611883f55132923bf8803691.png"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">森山蓬居
+              </div>
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Villa
+              </div>
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600;">
+                  <a href="#project7" class="popup-with-zoom-anim link-arrow">了解详细 <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+            <!-- 首页幻灯片 3 -->
+            <li data-transition="slotzoom-horizontal" data-slotamount="7" data-masterspeed="1000" data-fsmasterspeed="1000">
+              <img src="https://pic.imgdb.cn/item/61177a835132923bf8480608.png"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+              <!-- Layer 1 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['-250']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":0,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 2 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['370']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":600,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 3 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['289']" 
+                data-width="270"
+                data-height="5"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 4 -->
+              <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                data-x="['left']" data-hoffset="['100']" 
+                data-y="['middle','middle','middle','middle']" data-voffset="['19']" 
+                data-width="5"
+                data-height="544"
+                data-whitespace="nowrap"
+                data-type="shape" 
+                data-responsive_offset="on" 
+                data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;","speed":1000,"to":"o:1;","delay":1800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                data-textAlign="['left','left','left','left']"
+                data-paddingtop="[0,0,0,0]"
+                data-paddingright="[0,0,0,0]"
+                data-paddingbottom="[0,0,0,0]"
+                data-paddingleft="[0,0,0,0]"
+                style="background-color:#cee002;"> </div>
+              <!-- Layer 5 -->
+              <div class="slider-title tp-caption tp-resizeme" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
+                data-textAlign="['left']"
+                data-fontsize="['72', '63','57','50']"
+                data-lineheight="['72','68', '62','54']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="500" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">多元文化馆旁<br>湖边小屋
+              </div>
+              <!-- Layer 6 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[155%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1000" 
+                data-splitin="chars" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; letter-spacing:0.1em; text-transform:uppercase;">Residential
+              </div>
+              <!-- Layer 7 -->
+              <div class="slider-title tp-caption" 
+                data-x="['left']" data-hoffset="['156']"  
+                data-y="['middle','middle','middle','middle']" data-voffset="['230']"
+                data-textAlign="['left']"
+                data-fontsize="['18']"
+                data-lineheight="['20']"
+                data-height="none"
+                data-whitespace="nowrap"
+                data-transform_idle="o:1;"
+                data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;rZ:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
+                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                data-mask_in="x:50px;y:0px;s:inherit;e:inherit;" 
+                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                data-start="1500" 
+                data-splitin="none" 
+                data-splitout="none" 
+                data-responsive_offset="on" 
+                data-elementdelay="0.05" style="font-weight:600; ">
+                  <a href="#project4" class="popup-with-zoom-anim link-arrow">了解详细 <i class="icon ion-ios-arrow-thin-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
-			<!-- Part 02 顶栏系统 -->
-			<header class="main-header header-style-two">
-				<div class="sticky-header">
-					<div class="auto-container clearfix">
-						<div class="logo pull-left">
-							<a href="index.html" class="img-responsive"><img src="images/logo.png" alt="Homestate"></a>
-						</div>
-						<div class="right-col pull-right">
-							<nav class="main-menu">
-								<div class="navbar-header">   
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-								<div class="navbar-collapse collapse clearfix">
-									<ul class="navigation clearfix">
-										<li><a href="#">奇迹地平线团队 | Miracle Horizon</a></li>
-									</ul>
-								</div>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</header>
+    <div class="content">   
+      
+      <!-- 关于我们 -->
+      <section id="about" class="section section-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <strong class="section-subtitle">关于我们</strong>
+              <h2 class="section-title section-about-title">奇迹地平线工作室<br>Miracle Horizon Studios</h2>
+              <p>奇迹地平线工作室创建于2016年1月31日，目前团队成员共有40余人。工作室主要方向为现代、中式、中世纪、科幻等一系列风格的建筑以及建筑群落、城乡规划和地形编辑。团队项目成立随缘，人均鸽子，欢迎各位热爱Minecraft的朋友加入我们，和我们共同成长。新的项目展示和活动请留意BILIBILI官方账号或网站动态更新。</p>
+              <div class="experience-box">
+                <div class="experience-border"></div>
+                <div class="experience-content">
+                  <div class="experience-number">8</div>
+                  <div class="experience-info">Years<br>Experience</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class="dots-image">
+                <img alt="" class="about-img img-responsive visible-lg" src="https://pic.imgdb.cn/item/62a545a709475431299cb5c2.png">
+                <div class="dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Part 03 首页房产 -->
-			<section class="main-slider style-two">
-				<div class="tp-banner-container">
-					<div class="tp-banner">
-						<ul>
+      <!-- 团队成员 -->
+      <section id="team" class="section bg-dots">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="section-info">
+                <div class="title-hr wow fadeInLeft"></div>
+                <div class="info-title">团队成员</div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row-team row">
+                <!-- 团队成员/Line 1-->
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/65c2e0819f345e8d03df275c.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">室长</div>
+                          <h6 class="team-duty-white">Asakawa_chuan</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/62a545a709475431299cb5ce.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">核心管理员</div>
+                          <h6 class="team-duty-white">TXSCXZM&ensp;<a onclick="window.open('https://space.bilibili.com/86817947')" class="iconfont icon-bilibili"></a></h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.6s">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/65c2e7f59f345e8d03efcc82.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">管理员</div>
+                          <h6 class="team-duty-white">AoSword</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 团队成员/Line 2-->
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/65c2e9619f345e8d03f2c059.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">管理员</div>
+                          <h6 class="team-duty-white">Fish</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/65c2eb1a9f345e8d03f66a78.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">管理员</div>
+                          <h6 class="team-duty-white">Pendapan</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.6s">
+                  <div class="team-profile">
+                    <img alt="" src="https://pic.imgdb.cn/item/62a545f709475431299d1bff.jpg">
+                    <div class="team-hover">
+                      <div class="team-content">
+                        <div class="team-name">
+                          <div class="team-spec team-duty-gray">管理员</div>
+                          <h6 class="team-duty-white">yuyan</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 团队成员/Line 3-->
+                  <div class="col-team col-xs-6 col-md-4 wow fadeIn">
+                    <div class="team-profile">
+                      <img alt="" src="https://pic.imgdb.cn/item/62a545f709475431299d1c08.jpg">
+                      <div class="team-hover">
+                        <div class="team-content">
+                          <div class="team-name">
+                            <div class="team-spec team-duty-gray">管理员</div>
+                            <h6 class="team-duty-white">Kuma</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="team-profile">
+                      <img alt="" src="https://pic.imgdb.cn/item/62a545f709475431299d1c12.jpg">
+                      <div class="team-hover">
+                        <div class="team-content">
+                          <div class="team-name">
+                            <div class="team-spec team-duty-gray">管理员</div>
+                            <h6 class="team-duty-white">Kiw</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-team col-xs-6 col-md-4 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="team-profile">
+                      <img alt="" src="https://pic.imgdb.cn/item/62a545f709475431299d1bfa.jpg">
+                      <div class="team-hover">
+                        <div class="team-content">
+                          <div class="team-name">
+                            <div class="team-spec team-duty-gray">管理员</div>
+                            <h6 class="team-duty-white">8828</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-							<!-- Part 03 首页-房地产推销-第一张 -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/aws-01.png" data-saveperformance="off" data-title="Awesome Title Here">
-								<img src="https://pic.imgdb.cn/item/611779d45132923bf8427585.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/> 
-								<div class="tp-caption sfl sfb tp-resizeme" data-x="left" data-hoffset="15" data-y="center" data-voffset="0" data-speed="500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn">
-									<div class="outer-box">
-										<div class="top-area">
-											<h2>森山-<span>蓬居</span></h2>
-											<div class="text">奥沃森山</div>
-										</div>
-										<div class="bottom-area">
-											<ul class="info-list clearfix">
-												<li><strong>2,400</strong>面积/m²</li>
-												<li><strong>3</strong>客厅/个</li>
-												<li><strong>2</strong>卧室/个</li>
-											</ul>
-											<div class="price">￥20,52,400</div>
-										</div>
-									</div>
-								</div>
-							</li>
+      <!-- 项目列表 -->
+      <section id="projects" class="section-projects section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+               <h2 class="section-title">项目列表</h2>
+            </div>        
+            <div class="col-lg-7">
+              <div class="filter-content">
+                <ul class="filter-carousel filter pull-lg-right js-filter-carousel">
+                  <li class="active"><a href="#" class="all" data-filter="*">All</a></li>
+                  <li><a href="#" data-filter=".xd">现代</a></li>
+                  <li><a href="#" data-filter=".zs">中式</a></li>
+                  <li><a href="#" data-filter=".kh">科幻</a></li>
+                  <li><a href="#" data-filter=".zsj">中世纪</a></li>
+                  <li><a href="#" data-filter=".cz">城镇</a></li>
+                  <li><a href="#" data-filter=".jzq">建筑群</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 项目数据 -->
+        <div class="project-carousel owl-carousel">
+          <!-- Project 1 鸽子镇-->
+          <a href="#gzz" class="project-item item-shadow popup-with-zoom-anim cz">
+            <img alt="" class="img-responsive" src="https://pic.imgdb.cn/item/65c3114a9f345e8d03500703.png">
+            <div class="project-hover">
+              <div class="project-hover-content">
+                <h3 class="project-title">鸽子镇<br>改造乡村新居</h3>
+                <p class="project-description">该项目通过精心规划和创新设计，致力于将传统的乡村住宅转变为现代化、生态友好型的居住空间。在保留乡村自然风光和文化遗产的同时，引入现代建筑技术和绿色建筑理念，提高住宅的能效和舒适度，确保居民能够享受到更加健康、便捷的生活方式。</p>
+              </div>
+            </div>
+            <span class="link-arrow">了解详细 <i class="icon ion-ios-arrow-right"></i></span>
+          </a>
+          <!--STOP-->
+        </div>
+        <!-- 项目详细 / 鸽子镇 -->
+        <div id="gzz" class="container zoom-anim-dialog mfp-hide">
+          <div class="row">
+            <div class="col-lg-8"><img alt="" class="project-detail-img" src="https://pic.imgdb.cn/item/65c312e69f345e8d0353f33e.png"></div>
+            <div class="col-lg-4">
+              <h3 class="project-detail-title">鸽子镇<br>改造乡村新居</h3>
+              <p class="project-detail-text">该项目通过精心规划和创新设计，致力于将传统的乡村住宅转变为现代化、生态友好型的居住空间。在保留乡村自然风光和文化遗产的同时，引入现代建筑技术和绿色建筑理念，提高住宅的能效和舒适度，确保居民能够享受到更加健康、便捷的生活方式。</p>
+              <ul class="project-detail-list text-white">
+                <li>
+                  <span class="left">作者</span>
+                  <span class="right">Fish / TXSCXZM / Mapletav</span>
+                </li>
+                <li>
+                  <span class="left">项目类型</span>
+                  <span class="right">城镇</span>
+                </li>
+                <li>
+                  <span class="left">项目规模</span>
+                  <span class="right">中小型</span>
+                </li>
+                <li>
+                  <span class="left">项目标签</span>
+                  <span class="right">城乡改造</span>
+                </li>
+                <li>
+                  <span class="left">完成时间</span>
+                  <span class="right">2020年06月07日</span>
+                </li>
+              </ul>
+              <div class="project-detail-meta">
+                <span class="left text-white hidden-xs pull-sm-left">项目视频</span>
+                <div class="social-list pull-sm-right">
+                  <a onclick="window.open('https://www.bilibili.com/video/BV1rz4y1D7wa/')" class="iconfont icon-bilibili"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--STOP-->
+      </section>
 
-							<!-- Part 03 首页-房地产推销-第二张 -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/aws-03"  data-saveperformance="off"  data-title="Awesome Title Here">
-								<img src="https://pic.imgdb.cn/item/61177a835132923bf8480608.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/> 
-								<div class="tp-caption sfl sfb tp-resizeme" data-x="right" data-hoffset="15" data-y="center" data-voffset="0" data-speed="500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn">
-									<div class="outer-box">
-										<div class="top-area">
-											<h2>湖边<span>小屋</span></h2>
-											<div class="text">多元文化馆主城</div>
-										</div>
-										<div class="bottom-area">
-											<ul class="info-list clearfix">
-												<li><strong>660</strong>面积/m²</li>
-												<li><strong>1</strong>客厅/个</li>
-												<li><strong>3</strong>卧室/个</li>
-											</ul>
-											<div class="price">￥152,400</div>
-										</div>
-									</div>
-								</div>
-							</li>
+      <!-- 感动地平线人物、合作伙伴 -->
+      <section id="clients" class="section-clients section bg-dots">
+        <div class="container">
+          <h2 class="section-title">感动地平线年度人物 & 合作伙伴</h2>
+          <div class="client-carousel owl-carousel">
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="https://pic.imgdb.cn/item/65c303509f345e8d032e7c79.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="img/icon/quote.png">
+                <div class="client-title">
+                  <span class="client-name">Kuma</span> 
+                  <span class="client-company">/ 感动地平线2019年年度人物</span>
+                </div>
+                <p class="client-description"><!-- 待插入 --></p>
+              </div>
+            </div>
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="https://pic.imgdb.cn/item/65c305e79f345e8d033456ec.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="img/icon/quote.png">
+                <div class="client-title">
+                  <span class="client-name">Pendapan（熊猫）</span> 
+                  <span class="client-company">/ 感动地平线2018年年度人物</span>
+                </div>
+                <p class="client-description"><!-- 待插入 --></p>
+              </div>
+            </div>
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="https://pic.imgdb.cn/item/65c30aab9f345e8d033f4f75.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="img/icon/quote.png">
+                <div class="client-title">
+                  <span class="client-name">yuyan</span> 
+                  <span class="client-company">/ 感动地平线2017年年度人物</span>
+                </div>
+                <p class="client-description"><!-- 待插入 --></p>
+              </div>
+            </div>
+            <div class="client-carousel-item">
+              <img alt="" class="client-img" src="https://pic.imgdb.cn/item/65c30aab9f345e8d033f4f31.jpg">
+              <div class="client-box">
+                <img alt="" class="image-quote" src="img/icon/quote.png">
+                <div class="client-title">
+                  <span class="client-name">TXSCXZM</span> 
+                  <span class="client-company">/ 感动地平线2016年年度人物</span>
+                </div>
+                <p class="client-description"><!-- 待插入 --></p>
+              </div>
+            </div>
+          </div>
+          <div class="client-carousel-item">
+            <img alt="" class="client-img" src="https://pic.imgdb.cn/item/65c301159f345e8d03299cf4.jpg">
+            <div class="client-box">
+              <img alt="" class="image-quote" src="img/icon/quote.png">
+              <div class="client-title">
+                <span class="client-name">AoSword（嗷剑）</span> 
+                <span class="client-company">/ 感动地平线2020-2024年年度人物 / 爱睡大觉选手</span>
+              </div>
+              <p class="client-description">他，有着年轻朝气的蓬勃力量，有着勇往直前、开拓奋进的进取精神。纵使道路曲折，面对团队和成员的期待，他用行动和果敢粉碎了一个个困难。他以自己的自信与风采感染并鼓动了他人，他高歌猛进，开拓着依思的发展大道，为我们的未来开创出了另一片天地。</p>
+            </div>
+          </div>
+          <!-- 合作伙伴 -->
+          <div class="partner-carousel owl-carousel">
+            <div class="partner-carousel-item">
+              <img alt="https://www.minecraft.net/" src="img/partners/01.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://game.163.com/" src="img/partners/02.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://zh.minecraft.wiki/" src="img/partners/03.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://www.curseforge.com/" src="img/partners/04.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://modrinth.com/" src="img/partners/05.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://www.spigotmc.org/" src="img/partners/06.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://www.bilibili.com/" src="img/partners/07.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://www.overwolf.com/" src="img/partners/08.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://www.mcmod.cn/" src="img/partners/09.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://mineplugin.org/" src="img/partners/10.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://cloud.tencent.com/" src="img/partners/11.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="https://cn.aliyun.com/" src="img/partners/12.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="" src="img/partners/13.png">
+            </div>
+            <div class="partner-carousel-item">
+              <img alt="" src="img/partners/14.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 联系我们 -->
+      <section id="contacts">
+        <div class="section bg-dots">
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="section-info">
+                    <div class="title-hr wow fadeInLeft"></div>
+                    <div class="info-title">社交媒体</div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="row-contact row">
+                    <div class="col-contact col-lg-6">
+                      <h3 class="contact-title contact-top">订阅我们</h3>
+                      <p class="contact-address text-muted"><strong>在流媒体上关注并收看我们的视频</strong></p>
+                      <p class="contact-row"><strong class="text-white">Bilibili&emsp;</strong>@奇迹地平线团队</p>
+                      <p class="contact-row"><strong class="text-white">Webside&emsp;</strong>mhwork.space</p>
+                    </div>
+                    <div class="col-contact col-lg-6">
+                      <p class="contact-top"><strong class="text-muted">审核群群号</strong></p>
+                      <p class="phone-lg "><a href="https://jq.qq.com/?_wv=1027&k=s0BTODPY" class="text-white">568848185</a></p>
+                      <div class="text-muted"><strong class="text-muted">媒体账号直达</strong><br>
+                        <div class="contact-social social-list">
+                          <a onclick="window.open('https://space.bilibili.com/637477054')" class="iconfont icon-bilibili"></a>
+                          <a onclick="window.open('https://weibo.com/u/6526071250')" class="iconfont icon-xinlangweibo"></a>
+                          <a onclick="window.open('https://jq.qq.com/?_wv=1027&k=0vxmqtFQ')" class="iconfont icon-QQ-circle-fill"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section> 
 
-							<!-- Part 03 首页-房地产推销-第三张 -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/aws-02.png" data-saveperformance="off" data-title="Awesome Title Here">
-								<img src="https://pic.imgdb.cn/item/611779d45132923bf84275d0.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/> 
-								<div class="tp-caption sfl sfb tp-resizeme" data-x="left" data-hoffset="15" data-y="center" data-voffset="0" data-speed="500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn">
-									<div class="outer-box">
-										<div class="top-area">
-											<h2>改造<span>乡村新居</span></h2>
-											<div class="text">鸽子镇</div>
-										</div>
-										<div class="bottom-area">
-											<ul class="info-list clearfix">
-												<li><strong>1,260</strong>面积/m²</li>
-												<li><strong>1</strong>客厅/个</li>
-												<li><strong>4</strong>卧室/个</li>
-											</ul>
-											<div class="price">￥27,900</div>
-										</div>
-									</div>
-								</div>
-							</li>
+    </div>
 
-							<!-- Part 03 首页-房地产推销-第四张 -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/aws-04"  data-saveperformance="off"  data-title="Awesome Title Here">
-								<img src="https://pic.imgdb.cn/item/61177bea5132923bf852ee44.png"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/> 
-								<div class="tp-caption sfl sfb tp-resizeme" data-x="right" data-hoffset="15" data-y="center" data-voffset="0" data-speed="500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn">
-									<div class="outer-box">
-										<div class="top-area">
-											<h2>海景<span>高台</span></h2>
-											<div class="text">圣之城沿岸</div>
-										</div>
-										<div class="bottom-area">
-											<ul class="info-list clearfix">
-												<li><strong>530</strong>面积/m²</li>
-												<li><strong>1</strong>客厅/个</li>
-												<li><strong>2</strong>卧室/个</li>
-											</ul>
-											<div class="price">￥32,500</div>
-										</div>
-									</div>
-								</div>
-							</li>
+    <!-- 脚注 -->
+    <footer id="footer" class="footer section"> 
+      <div class="footer-flex">
+        <div class="flex-item">
+          <a class="brand pull-left" href="#">
+            <img alt="" src="img/logo/icon.png">
+            <div class="brand-info">
+              <div class="brand-name">Miracle Horizon</div>
+              <div class="brand-text">Minecraft Architecture Team</div>
+            </div>
+          </a>
+        </div>
+        <!--
+        <div class="flex-item">
+          <div class="social-list pull-sm-right">
+            <a href="" class="icon ion-social-twitter"></a>
+          </div>
+        </div>
+        
+        <div class="flex-item">
+          <ul class="lang-list">
+            <li class="active"><a href="#bqsm">Copyright © 版权声明</a></li>
+          </ul> 
+        </div>
+        -->
+        <div class="flex-item">
+          <div class="inline-block pull-sm-right">© MHWORK 2024. All Rights Reserved</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- Part 04 工作室简介 -->
-			<section class="about-section">
-				<div class="auto-container">
-					<div class="row">
-						<!-- 0401 -->
-						<div class="col-lg-4 col-md-4 text-center-sm text-center-xs">
-							<div class="img-holder">
-								<img src="https://pic.imgdb.cn/item/62a545a709475431299cb5c2.png" alt="">
-							</div>
-						</div>
-						<!-- 0402 -->
-						<div class="col-lg-8 col-md-8 about-text">
-							<!-- 040201 -->
-							<div class="sec-title style-2">
-								<h2>关于 <span>工作室</span></h2>
-								<div class="separator small-separator"></div>
-							</div>
-							<!-- 040202 -->
-							<div class="headding">
-								<p>奇迹地平线工作室创建于2016年1月31日，目前团队成员共有40余人。</p>
-							</div>
-							<!-- 040203 -->
-							<div class="text">
-								<p>工作室主要方向为现代、中式、中世纪、科幻等一系列风格的建筑以及建筑群落、城乡规划和地形编辑。团队项目成立随缘，人均鸽子，欢迎各位热爱Minecraft的朋友加入我们，和我们共同成长。新的项目展示和活动请留意BILIBILI官方账号或网站动态更新。</p>
-							</div>
-							<!-- 040204 -->
-							<div class="four-col-theme">
-								<div class="row clearfix">
-									<!-- 04020401 -->
-									<article class="col-md-3 col-sm-3 col-xs-4 column">
-										<div class="inner-box">
-											<div class="icon"><span class="fa fa-codepen"></span></div>
-											<h3 class="count">40+</h3>
-											<h4 class="title">成员人数</h4>
-										</div>
-									</article>
-									<!-- 04020402 -->
-									<article class="col-md-3 col-sm-3 col-xs-4 column">
-										<div class="inner-box">
-											<div class="icon"><span class="fa fa-folder-open-o"></span></div>
-											<h3 class="count">20+</h3>
-											<h4 class="title">项目总数</h4>
-										</div>
-									</article>
-									<!-- 04020403 -->
-									<article class="col-md-3 col-sm-3 col-xs-4 column">
-										<div class="inner-box">
-											<div class="icon"><span class="fa fa-user-plus"></span></div>
-											<h3><a href="https://jq.qq.com/?_wv=1027&k=s0BTODPY" >TP</a></h3>
-											<h4 class="title">审核群</h4>
-										</div>
-									</article>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Part 05 成员名单 -->
-			<section class="testimonials-section">
-				<div class="auto-container">
-					<div class="sec-title">
-						<h2>工作室 <span>核心成员</span></h2>
-						<div class="separator small-separator"></div>
-					</div>
-					<div class="testimonials-slider column-carousel three-column">
-
-						<!-- 001 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545a709475431299cb5c8.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>飞扬</h3>
-								<p class="designation">MCID-hfy</p>
-							</div>
-							<div class="slide-text">
-								<p>室长 | 主要负责组织活动和摸鱼。</p>
-							</div>
-						</article>
-
-						<!-- 002 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545a709475431299cb5ce.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>企鹅</h3>
-								<p class="designation">MCID-TXS</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 主要负责视频制作和宣传。</p>
-							</div>
-						</article>
-
-						<!-- 003 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545a709475431299cb5d6.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>熊猫</h3>
-								<p class="designation">MCID-Pendapan</p>
-									</div>
-							<div class="slide-text">
-								<p>管理员 | 主要负责各平台运营。</p>
-							</div>
-						</article>
-
-						<!-- 004 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545a709475431299cb5e0.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>废鱼</h3>
-								<p class="designation">MCID-Fish</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 主要负责服务器的运维。</p>
-							</div>
-						</article>
-
-						<!-- 005 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1bfa.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>8828</h3>
-								<p class="designation">MCID-?</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 主要负责审核相关内容。</p>
-							</div>
-						</article>
-
-						<!-- 006 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1bff.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>鱼研</h3>
-								<p class="designation">MCID-yuyan</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 群吉祥物。</p>
-							</div>
-						</article>
-
-						<!-- 007 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1c08.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>Kuma</h3>
-								<p class="designation">MCID-kuma</p>
-							</div>         
-							<div class="slide-text">
-								<p>管理员 | 群舰佬、吉祥物。</p>
-							</div>
-						</article>
-
-						<!-- 008 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1c12.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>啾啾啾</h3>
-								<p class="designation">MCID-kiw</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 主要负责服务器的维护。</p>
-							</div>
-						</article>
-
-						<!-- 009 -->
-						<article class="slide-item">
-							<figure class="image-box"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1c1d.jpg" alt=""></figure>
-							<div class="info-box">
-								<h3>嗷剑</h3>
-								<p class="designation">MCID-AoSword</p>
-							</div>
-							<div class="slide-text">
-								<p>管理员 | 群项目达人。</p>
-							</div>
-						</article>
-
-					</div>
-				</div>
-			</section>
-
-			<!-- Part EX 感动地平线年度人物（2022）-->
-			<section class="agent-section">
-				<div class="auto-container">
-					<div class="row clearfix">
-						<div class="column col-md-5 col-sm-12 col-xs-12">
-							<figure class="agent-image wow" data-wow-delay="300ms" data-wow-duration="1500ms"><img src="https://pic.imgdb.cn/item/62a545f709475431299d1c1d.jpg" alt=""></a></figure>
-						</div>
-						<div class="column col-md-7 col-sm-12 col-xs-12">
-							<div class="sec-title style-2">
-								<h2>嗷剑 <span>感动地平线2022年度人物</span></h2>
-								<div class="separator small-separator"></div>
-							</div>
-							<div class="desc-text">
-								<p>他，有着年轻朝气的蓬勃力量，有着勇往直前、开拓奋进的进取精神。纵使道路曲折，面对团队和成员的期待，他用行动和果敢粉碎了一个个困难。他以自己的自信与风采感染并鼓动了他人，他高歌猛进，开拓着依思的发展大道，为我们的未来开创出了另一片天地。</p>
-							</div>
-							<div class="info-box">
-								<ul class="clearfix">
-									<li class="address">
-										<div class="icon"><span class="fa fa-folder-open-o"></span></div>
-										<h3>参与项目 | 10+</h3>
-									</li>
-									<li class="contact-info">
-										<div class="icon"><span class="fa fa-bookmark-o"></span></div>
-										<h3>代表作品 | 森山蓬居</h3>
-									</li>
-								</ul>
-
-								<!-- 暂缓保留项目-按钮-编号#001
-								<a href="https://space.bilibili.com/35471635" class="theme-btn btn-style-one">关注傲剑，顿顿解馋</a>
-								-->
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Part EX 活动结果公示 -->
-			<section class="tabbed-floor-plans">
-				<div class="auto-container">
-					<div class="sec-title">
-						<h2>“TUNA"极限艺术建筑比赛</h2>
-						<div class="text">
-							<p>听云与明月窃语  看满天熠熠星辰</p>
-						</div>
-					</div>
-					<div class="floor-links">
-						<ul class="links">
-							<li><a href="#01" class="floor-btn active">第一名</a></li>
-							<li><a href="#02" class="floor-btn">第二名</a></li>
-							<li><a href="#03" class="floor-btn">第三名</a></li>
-							<li><a href="#04" class="floor-btn">人气王</a></li>
-						</ul>
-					</div>
-					<div class="floors-content">
-
-						<!-- 第一名 -->
-						<div class="floor-details collapsed" id="01">
-							<div class="row clearfix">
-								<div class="image-column col-md-6 col-sm-12 col-xs-12">
-									<figure class="image"><img src="https://pic.imgdb.cn/item/6117948c5132923bf8eb15b4.png" alt=""></figure>
-								</div>
-								<div class="content-column col-md-6 col-sm-12 col-xs-12">
-									<div class="text">
-										<p>船头饮酒，唱词吟诗。 兴尽晚回舟，误入桃花深处。</p>
-									</div>
-									<div class="list-title">
-										<h2>比赛信息</h2>
-									</div>
-									<ul class="styled-list">
-										<li>作品名称 | 《龙头初现恰逢春》</li>
-										<li>队伍名称 | LSP小队</li>
-										<li>队员名称 | Wangcai、Sui</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- 第二名 -->
-						<div class="floor-details" id="02">
-							<div class="row clearfix">
-								<div class="image-column col-md-6 col-sm-12 col-xs-12">
-									<figure class="image"><img src="https://pic.imgdb.cn/item/611795b15132923bf8f09b87.png" alt=""></figure>
-								</div>
-								<div class="content-column col-md-6 col-sm-12 col-xs-12">
-									<div class="text">
-										<p>来自这个世界的馈赠，请慢慢欣赏属于我们的故事吧</p>
-									</div>
-									<div class="list-title">
-										<h2>比赛信息</h2>
-									</div>
-									<ul class="styled-list">
-										<li>作品名称 | 《我们的故事》</li>
-										<li>队伍名称 | 糖果超甜</li>
-										<li>队员名称 | TXS、yuyan、AoSword</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- 第三名 -->
-						<div class="floor-details" id="03">
-							<div class="row clearfix">
-								<div class="image-column col-md-6 col-sm-12 col-xs-12">
-									<figure class="image"><img src="https://pic.imgdb.cn/item/611799085132923bf8ffdfbb.png" alt=""></figure>
-								</div>
-								<div class="content-column col-md-6 col-sm-12 col-xs-12">
-									<div class="text">
-										<p>远岛上的魔树庇护着此处的生物</p>
-									</div>
-									<div class="list-title">
-										<h2>比赛信息</h2>
-									</div>
-									<ul class="styled-list">
-										<li>作品名称 | 《小屑岛与它的居民》</li>
-										<li>队伍名称 | 小屑电器有限公司</li>
-										<li>队员名称 | xxxx233_ </li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<!-- 人气王 -->
-						<div class="floor-details" id="04">
-							<div class="row clearfix">
-								<div class="image-column col-md-6 col-sm-12 col-xs-12">
-									<figure class="image"><img src="https://pic.imgdb.cn/item/611a56885132923bf88f359e.jpg" alt=""></figure>
-								</div>
-								<div class="content-column col-md-6 col-sm-12 col-xs-12">
-									<div class="text">
-										<p>教堂钟声穿透了朦胧的海波，潜于深渊的水母指引着迷茫的信徒</p>
-									</div>
-									<div class="list-title">
-										<h2>比赛信息</h2>
-									</div>
-									<ul class="styled-list">
-										<li>作品名称 | 鲸落</li>
-										<li>队伍名称 | 菜鸡小队</li>
-										<li>队员名称 | fengdoudou、Ahaintsan、egomomo</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-			<!-- Part 06 项目展示 -->
-			<section class="gallery-section padd-bott-100">
-				<div class="auto-container">
-					<div class="sortable-masonry">
-
-						<!-- 标签设置 -->
-						<div class="filters text-center">
-							<ul class="filter-tabs filter-btns clearfix">
-								<li class="active filter" data-role="button" data-filter=".a"><span class="txt">全部</span></li>
-								<li class="filter" data-role="button" data-filter=".xx"><span class="txt">取消显示</span></li>
-								<li class="filter" data-role="button" data-filter=".b"><span class="txt">圣之城</span></li>
-								<li class="filter" data-role="button" data-filter=".c"><span class="txt">浮海帷幕</span></li>
-								<li class="filter" data-role="button" data-filter=".d"><span class="txt">奥沃森-山</span></li>
-								<li class="filter" data-role="button" data-filter=".e"><span class="txt">文泽馆</span></li>
-							</ul>
-						</div>
-
-						<!-- 图片设置 -->
-						<div class="row items-container clearfix">
-						
-							<!-- 这是个模板,复制粘贴修改就完事了(^～^;)ゞ
-
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item 标签">
-								<div class="inner-box">
-									<figure class="image-box"><img src="图片" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | </a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-
-							-->
-
-<!-- 项目编号-01                                                                     项目名称 | 圣之城          -->
-							<!-- 0101 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187ef15132923bf8621753.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0102 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187ef15132923bf8621709.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0103 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187ef15132923bf8621701.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0104 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187ef15132923bf86216eb.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0105 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187ef15132923bf86216d6.jpg" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0106 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187faf5132923bf8669417.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0107 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187faf5132923bf86693fc.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0108 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a b">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/61187faf5132923bf86693d7.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | 明轩</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-<!-- 项目编号-01                                                                     项目名称 | 圣之城          -->
-
-<!-- 项目编号-02                                                                     项目名称 | 浮海帷幕        -->
-							<!-- 0201 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611881ac5132923bf8729002.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0202 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611881ac5132923bf872901e.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0203 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611881ac5132923bf8728fd1.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0204 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611881ac5132923bf8728fa0.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0205 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611881ac5132923bf8728f88.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0206 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883065132923bf87aaf6f.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0207 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883065132923bf87aafbe.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0208 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883065132923bf87aaff1.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0209 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a c">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883065132923bf87ab02a.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | TXS、AoSword、daming1</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-<!-- 项目编号-02                                                                     项目名称 | 浮海帷幕        -->
-
-<!-- 项目编号-03                                                                     项目名称 | 奥沃森-山       -->
-							<!-- 0301 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883975132923bf87e0999.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0302 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883975132923bf87e09be.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0303 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883975132923bf87e096b.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0304 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883975132923bf87e093f.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0305 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883975132923bf87e0908.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0306 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883f55132923bf88036df.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0307 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883f55132923bf88036bb.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0308 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a d">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611883f55132923bf8803691.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-<!-- 项目编号-03                                                                     项目名称 | 奥沃森-山       -->
-
-<!-- 项目编号-04                                                                     项目名称 | 文泽馆          -->
-							<!-- 0401 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a e">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/6118794a5132923bf83fa396.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword、CucumBerR12、TXS</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0402 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a e">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611879495132923bf83fa37c.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword、CucumBerR12、TXS</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0403 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a e">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611879495132923bf83fa357.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword、CucumBerR12、TXS</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0404 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a e">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611879495132923bf83fa326.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword、CucumBerR12、TXS</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-							<!-- 0405 -->
-							<div class="col-md-4 col-sm-6 col-xs-12 masonry-item default-portfolio-item a e">
-								<div class="inner-box">
-									<figure class="image-box"><img src="https://pic.imgdb.cn/item/611879495132923bf83fa2f9.png" alt=""></figure>
-									<div class="overlay-box">
-										<div class="overlay-inner">
-											<div class="content">
-												<h3><a href="#gallery-popup" class=" has-gallery-popup" title="版权声明">作者 | AoSword、CucumBerR12、TXS</a></h3>
-											</div>
-										</div>
-									</div>
-									<a href="#gallery-popup" class="image-link has-gallery-popup" title="版权声明"><span class="icon fa fa-copyright"></span></a>
-								</div>
-							</div>
-<!-- 项目编号-04                                                                     项目名称 | 文泽馆          -->
-
-						</div>
-
-						<!-- 暂缓保留项目-按钮-编号#002
-						<div class="load-more-outer padd-top-50 text-center"><a href="#" class="theme-btn btn-style-six">文本</a></div>
-						-->
-
-						<!-- 慢慢上传，累死我了唉 -->
-						<div class="load-more-outer padd-top-50 text-center">正在上传ing</div>
-
-					</div>
-				</div>
-			</section>
-
-			<!-- Part 07 订阅提醒 -->
-			<section class="call-out">
-				<div class="container">
-					<div class="row">
-						<div class="column col-md-9 col-sm-12 col-xs-12">
-							<h2>订阅我们</h2>
-							<p>在BILIBILI上关注并收看我们的视频</p>
-						</div>
-						<div class="column col-md-3 col-sm-12 col-xs-12">
-							<div class="text-right padd-top-20">
-								<a href="https://space.bilibili.com/637477054" class="theme-btn btn-style-one">关注</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Part 08 脚注内容 -->
-			<footer class="main-footer">
-				<div class="container">
-					<div class="copy-right pull-left">
-					Copyright © <span>奇迹地平线团队</span> 2016-2023
-					</div>
-					<div class="menu pull-right">
-						<ul class="clearfix">
-							<li class="social-links">
-								<a href="https://jq.qq.com/?_wv=1027&k=0vxmqtFQ"><span class="fa fa-qq"></span></a>
-								<a href="https://weibo.com/u/6526071250"><span class="fa fa-weibo"></span></a>
-							</li>
-						</ul>
-					</div>
-				</div>      
-			</footer>
-
-		</div>
-
-		<!-- Part SET 返回顶部 -->
-		<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-double-up"></span></div>
-
-		<!-- Part SET 版权声明 -->
-		<div class="gallery-box" id="gallery-popup">
-			<div class="bg-fade-layer"></div>
-			<div class="popup-container">
-				<div class="popup-content">
-					<div class="popup-header">
-						<button type="button" class="btn-close"><span class="fa fa-close"></span></button>
-						<h3>版权声明</h3>
-					</div>
-					<div class="content-outer">
-						<div class="lower-content">
-							<div class="desc-text">
-							本站内所有素材图片作品（除成员头像外）均是奇迹地平线团队成员或已获得他人许可而上传分享，奇迹地平线团队拥有所有版权和使用权，仅供学习交流，未经原作者授权，请勿作他用。访问者可将本网站提供的内容或服务用于个人学习、研究或欣赏，以及其他非商业性或非盈利性用途，但同时应遵守著作权法及其他相关法律的规定，不得侵犯本网站及相关权利人的合法权利。除此以外，将本网站任何内容或服务用于其他用途时，须征得本网站及相关权利人的书面许可，并支付报酬。
-							</div>
-							<div class="desc-text">
-							©2016-2023 奇迹地平线团队 All rights reserved.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Part SET JS设置 -->
-		<script src="js/jquery.js"></script> 
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/revolution.min.js"></script>
-		<script src="js/jquery.fancybox.pack.js"></script>
-		<script src="js/isotope.js"></script>
-		<script src="js/mixitup.js"></script>
-		<script src="js/owl.js"></script>
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/masterslider/masterslider.js"></script>
-		<script src="js/wow.js"></script>
-		<script src="js/default-map-script.js"></script>
-		<script src="js/script.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
-		<script src="customizer/plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-		<script src="customizer/js/customizer.js"></script>
-
-	</body>
-
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/gmap.js"></script>
+  <!-- Slider revolution -->
+  <script src="js/rev-slider/jquery.themepunch.tools.min.js"></script>
+  <script src="js/rev-slider/jquery.themepunch.revolution.min.js"></script>
+  <!-- Slider revolution 5x Extensions   -->
+  <script src="js/rev-slider/revolution.extension.actions.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.carousel.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.kenburn.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.layeranimation.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.migration.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.navigation.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.parallax.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.slideanims.min.js"></script>
+  <script src="js/rev-slider/revolution.extension.video.min.js"></script>
+  <!-- Scripts -->
+  <script src="js/rev-slider-init.js"></script>
+  <script src="js/scripts.js"></script> 
+  <script src="js/iconfont.js"></script> 
+</body>
 </html>

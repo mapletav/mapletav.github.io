@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1707218586016') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xinlangweibo:before {
+  content: "\f01af";
+}
+
+.icon-QQ-circle-fill:before {
+  content: "\e887";
+}
+
+.icon-bilibili:before {
+  content: "\e501";
+}
+

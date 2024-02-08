@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1360",
+      "name": "新浪微博",
+      "font_class": "xinlangweibo",
+      "unicode": "f01af",
+      "unicode_decimal": 983471
+    },
+    {
+      "icon_id": "4937004",
+      "name": "QQ-circle-fill",
+      "font_class": "QQ-circle-fill",
+      "unicode": "e887",
+      "unicode_decimal": 59527
+    },
+    {
+      "icon_id": "38694630",
+      "name": "哔哩哔哩-copy",
+      "font_class": "bilibili",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    }
+  ]
+}
