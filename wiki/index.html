@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <title>Minecraft插件百科-Tusher</title>
+        <link rel="shortcut icon" href="../img/logo/MH icon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="Tusher插件百科，主要提供我的世界（Minecraft）插件（Plugins）配置介绍、教程等文档。">
+        <meta name="Keywords" content="minecraft,mc,我的世界,plugin,plugins,plug-in,plug-ins,插件,wiki,百科,文档,插件百科,我的世界插件百科,minecraft插件百科,tusher">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            :root {
+                --bg-color: #ffffff;
+                --text-color: #333333;
+                --secondary-bg: #f5f5f5;
+                --highlight-color: #3498db;
+                --border-color: #e0e0e0;
+                --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                --transition: all 0.3s ease;
+            }
+    
+            .dark-mode {
+                --bg-color: #1a1a1a;
+                --text-color: #f0f0f0;
+                --secondary-bg: #2a2a2a;
+                --highlight-color: #61dafb;
+                --border-color: #444444;
+                --card-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            }
+    
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                margin: 0;
+                padding: 0;
+                transition: var(--transition);
+            }
+    
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+    
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+                border-bottom: 1px solid var(--border-color);
+            }
+    
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+    
+            .logo img {
+                height: 40px;
+                margin-right: 10px;
+            }
+    
+            h1 {
+                margin: 0;
+                color: var(--highlight-color);
+                font-size: 2em;
+                font-weight: 300;
+            }
+    
+            .mode-toggle {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--text-color);
+                transition: var(--transition);
+            }
+    
+            .mode-toggle:hover {
+                color: var(--highlight-color);
+            }
+    
+            .search-bar {
+                margin: 20px 0;
+                position: relative;
+            }
+    
+            .search-bar input {
+                width: 100%;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 30px;
+                background-color: var(--secondary-bg);
+                color: var(--text-color);
+                font-size: 1em;
+                transition: var(--transition);
+            }
+    
+            .search-bar input:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px var(--highlight-color);
+            }
+    
+            .wiki-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+    
+            .wiki-card {
+                background-color: var(--bg-color);
+                border-radius: 10px;
+                padding: 25px;
+                transition: var(--transition);
+                border: 1px solid var(--border-color);
+                box-shadow: var(--card-shadow);
+                cursor: pointer;
+            }
+    
+            .wiki-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+    
+            .wiki-card h3 {
+                margin-top: 0;
+                color: var(--highlight-color);
+                font-size: 1.4em;
+                font-weight: 500;
+            }
+    
+            .wiki-card p {
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+    
+            .card-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.8em;
+                color: #888;
+                margin-top: 15px;
+            }
+    
+            .time-info {
+                flex-grow: 1;
+            }
+    
+            .read-more {
+                color: var(--highlight-color);
+                text-decoration: none;
+                font-weight: 500;
+            }
+    
+            @media (max-width: 768px) {
+                .container {
+                    padding: 10px;
+                }
+    
+                header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .logo img {
+                    display: none;
+                }
+    
+                .mode-toggle {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+    
+                .wiki-grid {
+                    grid-template-columns: 1fr;
+                }
+    
+                .search-bar input {
+                    padding: 12px 15px;
+                    font-size: 0.9em;
+                }
+    
+                .wiki-card {
+                    padding: 20px;
+                }
+    
+                .card-footer {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+    
+                .time-info {
+                    margin-bottom: 5px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="./TUSHER LOGO.png" alt="Wiki Logo">
+                    <h1>插件百科 | Plugins Wiki</h1>
+                </div>
+                <button class="mode-toggle" onclick="toggleDarkMode()" id="modeToggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+            </header>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="搜索插件..." onkeyup="searchWiki()">
+            </div>
+            <div class="wiki-grid" id="wikiGrid"></div>
+        </div>
+    
+        <script>
+            const wikiData = [
+                { title: "Skript", description: "一个供不熟悉 Java 的服务器管理员自行编写游戏规则、玩法等的插件", link: "./plugins/skript/index.html", created: "2024-07-28", lastEdited: "2024-07-28" },
+                { title: "Authme", description: "一个知名登录管理插件</br>&nbsp;", link: "./plugins/authme/index.html", created: "2024-07-28", lastEdited: "2024-07-28" },
+                { title: "TAB", description: "一个多功能tab列表/计分板显示插件</br>&nbsp;", link: "./plugins/tab/index.html", created: "2024-07-28", lastEdited: "2024-07-28" },
+                { title: "Better Messages", description: "一个修改显示进出信息的插件</br>&nbsp;", link: "./plugins/bettermessages/index.html", created: "2024-07-28", lastEdited: "2024-07-28" },
+
+            ];
+
+            function renderWikiGrid(data) {
+                const wikiGrid = document.getElementById('wikiGrid');
+                wikiGrid.innerHTML = '';
+                data.forEach(item => {
+                    const wikiCard = document.createElement('div');
+                    wikiCard.className = 'wiki-card';
+                    wikiCard.onclick = () => window.location.href = item.link;
+                    wikiCard.innerHTML = `
+                        <h3>${item.title}</h3>
+                        <p>${item.description}</p>
+                        <div class="card-footer">
+                            <div class="time-info">
+                                创建: ${item.created} | 编辑: ${item.lastEdited}
+                            </div>
+                            <span class="read-more">阅读更多 &rarr;</span>
+                        </div>
+                    `;
+                    wikiGrid.appendChild(wikiCard);
+                });
+            }
+    
+            function searchWiki() {
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const filteredData = wikiData.filter(item => 
+                    item.title.toLowerCase().includes(searchTerm) || 
+                    item.description.toLowerCase().includes(searchTerm)
+                );
+                renderWikiGrid(filteredData);
+            }
+
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+                const modeToggle = document.getElementById('modeToggle');
+                if (document.body.classList.contains('dark-mode')) {
+                    modeToggle.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    `;
+                } else {
+                    modeToggle.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <line x1="12" y1="1" x2="12" y2="3"/>
+                            <line x1="12" y1="21" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="3" y2="12"/>
+                            <line x1="21" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                    `;
+                }
+            }
+
+            renderWikiGrid(wikiData);
+        </script>
+    </body>
+</html>
